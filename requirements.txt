@@ -1,0 +1,10 @@
+pymupdf
+pytesseract
+pillow
+requests
+streamlit
+pandas
+pyswisseph
+fpdf2>=2.8.1
+uharfbuzz
+
