@@ -280,18 +280,16 @@ def gemini_text(facts_md, excerpts, lang, key, model="gemini-3.5-flash-lite"):
         "1. NO JARGON: Translate all astrological data (cusps, sub-lords, significators) into plain, engaging human language. "
         "Do not use raw astro-math terms in the text.\n"
 
-        "2. EXTREME LENGTH, DEPTH & SPECIFICITY: You must write a very long report. Use the following structure and write 3-4 long paragraphs for EACH section. You MUST deeply analyze and answer the specific life aspects requested below:\n"
-        "   - Section 1: Introduction, Gender & Deep Personality Analysis (Analyze the planetary energies to deduce the native's gender traits/inclinations. Discuss hidden strengths, weaknesses, and core mindset).\n"
-        "   - Section 2: Educational Stream & Intellect (Deep dive into their education based on 4th, 5th, and 9th cusps. Explicitly state WHICH STREAM they studied or are suited for—e.g., Tech, Medicine, Arts, Commerce, IT—based on planets like Mercury/Jupiter/Mars).\n"
-        "   - Section 3: Siblings & Family Dynamics (Analyze the 3rd and 11th cusps to deduce the likely number of siblings. Explicitly state how many BROTHERS and SISTERS they might have, and describe the relationship with them).\n"
-        "   - Section 4: Past Validations (Deduce and describe 4 to 5 highly specific micro-level past events or emotional phases they have likely experienced to build trust).\n"
-        "   - Section 5: Career, Business & Financial Matrix (Explicitly analyze the 2nd, 6th, 7th, and 10th cusps to state whether they are destined for a JOB or BUSINESS. Pinpoint the exact professional field/industry, wealth potential, and workplace dynamics).\n"
-        "   - Section 6: Love, Marriage & Partner Profile (Deep psychological breakdown. Who is the marriage partner? Explicitly describe the partner's physical traits, profession, financial status, and nature in deep detail based on the 7th cusp sub-lord).\n"
-        "   - Section 7: Health, Vitality & Well-being (Preventative care based on 1st, 6th, and 8th house planetary alignments).\n"
-        "   - Section 8: Upcoming 3-5 Years In-Depth (Month-by-month or phase-by-phase breakdown based on current/upcoming Dasha & Bhukti).\n"
-        "   - Section 9: Psychological Guidance & Constructive Advice (How to navigate challenges and maximize potential).\n\n"
+        "2. EXTREME LENGTH & DEPTH: You must write a very long report. Use the following structure and write 3-4 long paragraphs for EACH section:\n"
+        "   - Section 1: Introduction & Deep Personality Analysis (Hidden strengths, weaknesses, mindset).\n"
+        "   - Section 2: Past Validations (Deduce and describe 4 to 5 highly specific micro-level past events or emotional phases they have likely experienced to build trust).\n"
+        "   - Section 3: Career, Business & Financial Matrix (Micro-level scenarios: e.g., 'You will likely earn through tech-investments, hidden sources, or sudden property gains', outline workplace dynamics).\n"
+        "   - Section 4: Love, Marriage & Family Life (Deep psychological breakdown of their relationships, partner's nature, and family dynamics).\n"
+        "   - Section 5: Health, Vitality & Well-being (Preventative care based on planetary alignments).\n"
+        "   - Section 6: Upcoming 3-5 Years In-Depth (Month-by-month or phase-by-phase breakdown based on current/upcoming Dasha & Bhukti).\n"
+        "   - Section 7: Psychological Guidance & Constructive Advice (How to navigate challenges).\n\n"
 
-        "3. MICRO-LEVEL SCENARIOS: Provide ultra-specific examples for every prediction. Instead of 'financial gains', describe 'sudden income from an old tech investment or a female relative'.\n"
+        "3. MICRO-LEVEL SCENARIOS: Provide ultra-specific examples for every prediction. Instead of 'financial gains', describe 'sudden income from an old investment or a female relative'.\n"
         "4. TONE & SAFETY: Be highly premium, warm, and professional. NEVER predict death, fatal accidents, or incurable diseases. Frame challenges as areas for growth.\n"
         f"5. LANGUAGE: Write the ENTIRE report fluently in {langname}. Use rich, expressive storytelling language.\n"
         "6. FORMAT: Use ONLY markdown headings (#, ##, ###), bold text (**text**), and bullets (-). No tables, no HTML."
@@ -299,7 +297,7 @@ def gemini_text(facts_md, excerpts, lang, key, model="gemini-3.5-flash-lite"):
 
     user = (
         "Generate a massively detailed, 5+ page micro-level life reading based on these astrology facts.\n\n"
-        "ASTROLOGY FACTS (Extract deeply from Dasha balances, Cusps, and Planets to find education, siblings, career, and partner details):\n" + facts_md +
+        "ASTROLOGY FACTS (Extract deeply from Dasha balances, Cusps, and Planets):\n" + facts_md +
         "\n\nKP REFERENCE GUIDELINES (Use to shape the advice):\n" + excerpts
     )
 
